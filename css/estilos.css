@@ -1,0 +1,544 @@
+    /*TODAPAGINA*/
+        *{
+            margin: 0;
+            padding: 0;	
+            box-sizing: border-box;
+        }
+
+    #main_wrapper
+    {
+        width: 70%;
+        max-width: 1000px;
+        margin: 0 auto;    
+        height: auto;
+        
+    } 
+
+    /*BODY*/
+        body{
+            font-family: 'Century Gothic';
+            background: url('../imagenes/fondo2.jpg');
+            background-size: contain;
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            color: #181818;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        img{
+            max-width: 100%;
+            
+        }
+    
+    /*ARTICULO*/
+
+        .desvanecer:hover {
+            opacity: 0.07; /* Opacidad que le queremos dar a la imagen cuando pasamos por encima*/    
+            transition: opacity 500ms; /*Tipo de transicion y tiempo que tarda en ejecutarla*/
+        }
+        .div-imagen {
+            display:inline-block;
+            position:relative;
+        }
+        
+        .div-imagen > div {
+            position:absolute;   
+            z-index:-1;/*Al tener varios elementos superponiendose estes es el del menor valor por lo que se queda detras de la imagen a menos que pasemos por encima por eso tiene este codigo sin el no estaria por detras de la imagen*/   
+            margin-bottom: 25%;
+            margin-left: 25%;
+            margin-right: 25%;
+            margin-top: 20%;            
+        }
+
+        .desvanecer1:hover {
+            opacity: 0.07; /* Opacidad que le queremos dar a la imagen cuando pasamos por encima*/    
+            transition: opacity 500ms; /*Tipo de transicion y tiempo que tarda en ejecutarla*/
+        }
+
+        .div-imagen1 {
+            display:inline-block;
+            position:relative;
+        }
+        
+        .div-imagen1 > div {
+            position:absolute;   
+            z-index:-1;/*Al tener varios elementos superponiendose estes es el del menor valor por lo que se queda detras de la imagen a menos que pasemos por encima por eso tiene este codigo sin el no estaria por detras de la imagen*/   
+            width: 40%;
+            margin:4%;
+            margin-top: 8%;        
+        }
+
+        .div-imagen1 > .texto2 {
+            position:absolute;   
+            z-index:-1;/*Al tener varios elementos superponiendose estes es el del menor valor por lo que se queda detras de la imagen a menos que pasemos por encima por eso tiene este codigo sin el no estaria por detras de la imagen*/   
+            width: 40%;
+            margin: 56%;/*complementa al margen de div hasta 60%*/
+            margin-top: 8%;           
+        }
+
+        
+        article{
+            height:100%;
+            overflow:hidden;
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            padding: 6%;
+        }
+
+        article img{
+            padding-top:3%;
+            padding-bottom: 3%;
+            border-radius: 44px 44px 44px 44px;
+            box-sizing:border-box;/*PARA QUE NO SUPERE EL 100%*/
+            height: auto;           
+        }
+
+        article img1{            
+            float:left;
+            width: 48%;
+            padding-top: 2%;
+            box-sizing:border-box;
+        }
+        article img2        {
+            float:right;
+            width: 48%;
+            padding-top: 2%;
+            box-sizing:border-box;
+        }
+
+        article h1{
+            color:#018FC1;
+            font-weight: bold;    
+            margin-bottom: 3%;
+            margin-top: 2%;                
+        }
+
+        article h2{
+            margin-bottom: 5%;
+            color:rgb(3, 42, 56);
+            font-weight: bold;
+        }
+
+        article p{
+            font-size: 1em;
+            font-weight: bold;            
+        }
+
+
+    /*PARTEATRAS*/
+        #parteatras{ 
+            background-color: rgba(155, 185, 226, 0.2);
+            color: #000000;
+            background-repeat: repeat-x;
+            margin-top: 2%;
+            border-radius: 44px 44px 44px 44px;
+            border: 0px solid #000000;
+        }
+
+    /*Titulos*/
+
+        .title{
+            width: 90%;		
+            display: flex;
+            align-items: center;	
+            background-size: cover;
+            padding-top:4%;
+            padding-bottom: 4%;
+            height: auto;            
+        }
+
+        .title h1{
+            color: #ffffff;
+            font-size: 320%;
+            font-weight: 200;	
+            text-shadow: 4px 6px 0px #624a4a, 
+            3px 2px 0px rgba(56, 76, 255, 0.38);
+            margin-left: 10%;                     
+        }
+        .title h3{
+            color: #ffffff;
+            font-size: 100%;
+            font-weight: 200;
+            text-align: center;
+            text-shadow: 4px 6px 0px #624a4a, 
+            3px 2px 0px rgba(56, 76, 255, 0.38);
+            float:left;
+            margin-top: 10%;
+            margin-left: -15%;
+        }
+
+    /*NAVEGACION*/
+
+        nav{
+            display: inline-block;
+            padding: 1%;
+            text-align: center;
+            width: 100%;
+            height: auto;                      
+        }
+
+        nav ul{
+            list-style-type: none;
+            background-color: rgba(57, 61, 66, 0.4);
+            padding: 1%;
+            border-radius: 44px 44px 44px 44px;
+            border-bottom: 4px solid #000000;
+        }
+
+        nav li{
+            display: inline-block;
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+
+        nav a{
+            font-size: 1em;
+            color: #ffffff;   
+            text-decoration: none;                        
+        }
+
+        nav a:hover{
+            color: #018FC1;
+            border-bottom: 3px solid #018FC1;            
+        }
+
+    /* Contacto */
+
+        .registro{
+            width: 40%;
+            background: #24303c ;
+            padding: 4%;
+            margin: auto;
+            margin-top: 6%;
+            border-radius: 6%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;            
+        }
+
+        .registro h4{
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .control{            
+            width: 100%;
+            background: #24303c;
+            padding: 4%;
+            border-radius: 4%;
+            margin-bottom: 7%;
+            border: 1px solid #1f53c5;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.1em;
+        }
+
+        .registro p{
+            height: 20%;
+            text-align: center;
+            font-size:1.1em;
+        }
+
+        .registro a:hover{ 
+            color: white;
+            text-decoration: underline;
+            /* Resaltar apartado */
+            color: #018FC1; 
+            border-bottom: 3px solid #018FC1;
+        }
+
+        .registro .boton{
+            width: 100%;
+            background: #1f53c5;
+            border: none;
+            padding: 4%;
+            color: white;
+            margin: auto;
+            font-size: 1.1em;            
+        }
+
+
+    /* ubicacion */
+
+        organigrama{
+            text-align: center;            
+        }
+
+        organigrama h1{
+            color: #018FC1;
+            font-style: italic;
+            font-weight: bold;
+            margin-bottom: 3%;
+            margin-top: 13%;
+        }
+
+        organigrama h2{
+            color: black;
+            font-weight: bold;            
+        }
+
+        organigrama h5{        
+            padding-bottom: 2%;            
+        }
+
+        organigrama hr{
+            width: 30%;
+            margin: auto;
+            margin-bottom: 1%;
+        }
+
+
+        aside{
+            position: absolute; /*causa que su posición normal se sobreponga sobre las otras*/
+            height: 10%;
+            width: 60%;   
+            background-color: #a5cbd0;
+            box-shadow: 0px 2px 5px #1c1a19;
+            border-radius: 5px;   
+            color: black;
+            font-size: 0.9em;     
+            text-align: center;
+            margin-left: 5%                   
+        }
+
+        aside h3{
+            margin-bottom: 2%;
+            margin-top: 2%;
+        }
+
+        nav1{
+            float:left;
+            width: 50%;        
+        }
+
+        nav2{
+        float:right;
+            width: 50%;                          
+        }
+
+    /* Actividades */
+
+        div.gallery1{
+            float: left;
+            width: 47%;
+        }
+        
+        div.gallery2{
+            float: right;
+            width: 47%;
+        }
+
+        div.gallery3{
+            margin: auto;
+            margin-top: 50%;
+            width: 47%;
+        }        
+        
+        div.gallery:hover{
+            border: 1px solid #777;
+        }
+        
+        div.gallery img{
+            width: 100%;
+            height: auto;            
+        }
+        
+        div.desc{
+            padding: 15px;
+            text-align: center;
+        }
+
+
+    /*Secretaria*/
+        article li{
+            float: left;
+        }
+        
+        article li a{
+            display: block; /*hace que el comportamiento del elemento sea como un bloque*/
+            color: white;
+            text-align: center;
+            padding: 2% 1%;
+            text-decoration: none;
+        }
+        
+        article li a:hover{
+            background-color: #59788D;
+        }
+        article ul{
+            background-color: #084D71;
+        }
+
+        article table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        article th, td{
+            text-align: left;
+            padding: 1%;
+        }
+    
+        article tr:nth-child(even){
+        background-color: #005791;
+        }    
+
+        article hr{
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+
+    /* Footer */
+
+
+        footer{
+            padding: 5%;      
+            text-align: center;            
+        }
+
+        footer p, footer ul{
+            font-size: 0.8em;
+        }
+
+        footer h1{
+            font-size: 1.1em;            
+        }
+
+        footer img{
+            width: 40px;
+            height: 40px;
+        }
+
+        footer a:hover img{
+            transform:scale(1.25);
+        }
+
+
+   
+    /*MÓVIL*/
+
+
+    @media screen and (max-width: 800px){
+        .title{
+            width:90%;
+        }
+        .title h1{
+            font-size:100%;
+        }
+        .title h3{
+            font-size:50%;
+        }
+        nav{
+            width:100%;
+        }
+
+        
+    /*navegacion*/
+
+    
+        nav a{
+            font-size: 0.7em;
+            color: #ffffff;   
+            text-decoration: none;                         
+        }
+        
+            
+        
+        article{
+            height:100%;
+            overflow:hidden;
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            padding: 6%;        
+        }
+
+    /*ubicacion*/
+
+        aside{            
+            font-size: 0.5em;     
+            text-align: center;        
+            padding:1%;
+        }
+        
+        organigrama h2{
+            font-size: 0.8em;            
+        }
+
+        organigrama h5{    
+            font-size: 0.7em;            
+        }
+
+        organigrama h1{
+            margin-top: 33%;
+            font-size: 0.8em;
+        }
+        
+
+    /*Contacto*/
+
+       .registro{
+            width: 100%;              
+        }
+
+    
+    /*INDICE*/
+
+        article h1{
+            color:#018FC1;
+            font-weight: bold;    
+            margin-bottom: 3%;
+            margin-top: 2%;   
+            font-size: 1em;             
+        }
+
+        article i{
+            font-size: 0.6em;            
+        }
+        
+    
+
+    /*Texto ocultado indice*/  
+
+        .div-imagen > div {
+                position:absolute;   
+                z-index:-1;/*Al tener varios elementos superponiendose estes es el del menor valor por lo que se queda detras de la imagen a menos que pasemos por encima por eso tiene este codigo sin el no estaria por detras de la imagen*/   
+                margin: 25%;
+                visibility: hidden;        
+        }
+
+        .div-imagen1 > div{
+            position:absolute;   
+            z-index:-1;/*Al tener varios elementos superponiendose estes es el del menor valor por lo que se queda detras de la imagen a menos que pasemos por encima por eso tiene este codigo sin el no estaria por detras de la imagen*/   
+            width: 40%;
+            margin:4%;
+            margin-top: 8%;
+            visibility: hidden;         
+        }
+
+        .div-imagen1 > .texto2 {
+            position:absolute;   
+            z-index:-1;/*Al tener varios elementos superponiendose estes es el del menor valor por lo que se queda detras de la imagen a menos que pasemos por encima por eso tiene este codigo sin el no estaria por detras de la imagen*/   
+            width: 40%;
+            margin: 56%;/*complementa al margen de div hasta 60%*/
+            margin-top: 8%;
+            visibility: hidden;        
+        }
+
+    /*Footer*/
+
+        footer img{
+            width: 25px;
+            height: 25px;
+        }
+
+}
+       
+
+    
+    
